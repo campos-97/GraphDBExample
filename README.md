@@ -2,7 +2,7 @@
 
 * Descargar e instalar Neo4j desktop desde https://neo4j.com/download/
 * Crear un nuevo grafo e iniciarlo
-* Entrar a manage y open browser o a localhost:7474
+* Entrar a manage y open browser
 * Ejecutar los queries de Example.cypher
 
 Para usar csv:
