@@ -12,10 +12,18 @@ CREATE INDEX ON :Person(PersonId);
 // so we use schema await (a shell command) to block until they are populated.
 schema await 
 
-// Creating relations
+// Creating classmates relations
 USING PERIODIC COMMIT
 LOAD CSV WITH HEADERS FROM "file:///Relationship.csv" AS row
 MATCH (personA:Person {PersonId: row.fk_idPersonA})
 MATCH (personB:Person {PersonId: row.fk_idPersonB})
 WHERE toString(row.TypeOfRelationship) = 'Classmates'
 MERGE (personA)-[:Classmates]->(personB);
+
+// Creating ProfessorStudent relations
+USING PERIODIC COMMIT
+LOAD CSV WITH HEADERS FROM "file:///Relationship.csv" AS row
+MATCH (personA:Person {PersonId: row.fk_idPersonA})
+MATCH (personB:Person {PersonId: row.fk_idPersonB})
+WHERE toString(row.TypeOfRelationship) = 'ProfessorStudent'
+MERGE (personA)-[:ProfessorStudent]->(personB);

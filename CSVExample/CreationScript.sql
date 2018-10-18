@@ -36,32 +36,32 @@ VALUES ('Raul');
 
 
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (1,2, 'Compañeros');
+VALUES (1,2, 'Classmates');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (1,3, 'Compañeros');
+VALUES (1,3, 'Classmates');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (1,4, 'Compañeros');
+VALUES (1,4, 'Classmates');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (1,5, 'Compañeros');
+VALUES (1,5, 'Classmates');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (2,3, 'Compañeros');
+VALUES (2,3, 'Classmates');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (2,4, 'Compañeros');
+VALUES (2,4, 'Classmates');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (2,5, 'Compañeros');
+VALUES (2,5, 'Classmates');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (3,4, 'Compañeros');
+VALUES (3,4, 'Classmates');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (3,5, 'Compañeros');
+VALUES (3,5, 'Classmates');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (6,1, 'Profesor-Alumno');
+VALUES (6,1, 'ProfessorStudent');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (6,2, 'Profesor-Alumno');
+VALUES (6,2, 'ProfessorStudent');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (6,3, 'Profesor-Alumno');
+VALUES (6,3, 'ProfessorStudent');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (6,4, 'Profesor-Alumno');
+VALUES (6,4, 'ProfessorStudent');
 INSERT INTO Relationship(fk_idPersonA,fk_idPersonB,TypeOfRelationship)
-VALUES (6,5, 'Profesor-Alumno');
+VALUES (6,5, 'ProfessorStudent');
 
 SELECT * FROM Person;
