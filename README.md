@@ -15,7 +15,8 @@
 * Ejemplo 3:
   1. Entrar a cualquier grafo de Neo4j y darle manage > open folder
   2. Copiar jars en la carpeta lib a la carpeta Neo4jLib
-  3. Correr el archivo update.bat
-  4. Correr el archivo queries.bat y correr las consultas que se deseen
+  3. Entrar a Neo4jSpecies
+  4. Correr el archivo update.bat
+  5. Correr el archivo queries.bat y correr las consultas que se deseen
   
 
