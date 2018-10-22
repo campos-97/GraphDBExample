@@ -7,11 +7,6 @@ CREATE (:Person {Name: row.Name, PersonId: row.idPerson});
 CREATE INDEX ON :Person(Name);
 CREATE INDEX ON :Person(PersonId);
 
-//As the indexes are created after the nodes are inserted,
-// their population happens asynchronously,
-// so we use schema await (a shell command) to block until they are populated.
-schema await 
-
 // Creating classmates relations
 USING PERIODIC COMMIT
 LOAD CSV WITH HEADERS FROM "file:///Relationship.csv" AS row
